@@ -1,0 +1,14 @@
+body {
+  height: 100%;
+}
+.main {
+
+  background-color: pink;
+  border: 5px;
+  border-color: blueviolet;
+}
+
+.para {
+  line-height: 0.3;
+
+}
