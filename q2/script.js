@@ -9,7 +9,7 @@ $(document).ready( function() {
     success: function (data) {
       console.log(data);
       for (let index = 0; index < data.length; index++) {
-        const element = (data[index]["times"]["idle"] / 10000000).toFixed(4);
+        const element = (100 - (data[index]["times"]["idle"] / 10000000)).toFixed(4);
         console.log(element);
         var para = $("<p class='para text-center'>" + (index + 1) + ".       " + element + "%</p>").appendTo(main);
       }
